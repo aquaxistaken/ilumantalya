@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEREA ILUMA TÜRKİYE | Orijinal IQOS, Terea ve Heets Ürünleri</title>
+    <meta name="description" content="Modern IQOS, Terea ve Heets ürünleri için Türkiye'deki güvenilir adresiniz. Hızlı teslimat, %100 orijinal ve en yeni modeller. Şimdi keşfedin!">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-23F33RZH3G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G-23F33RZH3G'); // Buraya kendi Ölçüm Kimliğinizi (Measurement ID) girin
+    </script>
+  
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "TEREA ILUMA TÜRKİYE",
+      "url": "https://www.terea-iluma.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.terea-iluma.com/products-spa.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TEREA ILUMA TÜRKİYE",
+      "url": "https://www.terea-iluma.com/",
+      "logo": "https://www.terea-iluma.com/images/Iqos.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+90-538-407-5786",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.instagram.com/terea_iluma_türkiye_hesap_adınız/",
+        "https://www.facebook.com/terea_iluma_türkiye_sayfa_adınız/"
+        // Diğer sosyal medya linkleriniz
+      ]
+    }
+    </script>
+  </head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html" id="logoBtn"><img src="images/Iqos.png" alt="TEREA ILUMA Logosu"></a>
+    </div>
+    
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" id="menuHome">Anasayfa</a></li>
+        <li><a href="products-spa.html" id="menuProducts" class="active">Ürünler</a></li>
+        <li><a href="blog.html" id="menuBlog">Blog</a></li>
+        <li><a href="index.html#about" id="menuAbout">Hakkımızda</a></li>
+        <li><a href="index.html#contact" id="menuContact">İletişim</a></li>
+        <li><a href="index.html#faq" id="menuFaq">SSS</a></li>
+      </ul>
+    </nav>
+  
+    <div class="nav-toggle" aria-label="Menü Aç/Kapat">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <div class="container" id="app"></div>
+
+  <script>
+    // --- Data ---
+    const CATEGORIES = [
+      { id:"iqos", name:"IQOS Cihazlar", icon:"💡", desc:"Isıtmalı tütünün en yeni teknolojisi." },
+      { id:"terea", name:"Terea Sigaralar", icon:"🌱", desc:"Yeni nesil taze Terea stickler." },
+      { id:"heets", name:"Heets Sigaralar", icon:"🍂", desc:"Klasik ve aromalı Heets stickler." }
+    ];
+    const PRODUCTS = {
+      iqos: [
+        {
+          id:"0",
+          name:"IQOS",
+          img:"ıqoscihazlar/ilumaiprime.jpg",
+          short:"Şık gece mavisi, hızlı şarj ve çift kullanım imkanı.",
+          props: [
+            { icon:"⚡", value:"Çift Kullanım" },
+            { icon:"🔋", value:"Hızlı Şarj" },
+            { icon:"🎨", value:"Gece Mavisi" }
+          ],
+          desc: `IQOS Duo 3.0 Gece Mavisi, kompakt tasarımı ve modern rengiyle IQOS ailesinin en yeni nesil cihazıdır. Aynı anda iki stick kullanım özelliği ve hızlı şarj fonksiyonu ile öne çıkar. Kullanıcı dostu yapısı sayesinde temizlik ve bakım ihtiyacı minimuma indirilmiştir.<br><br>
+    Kusursuz ısıtma teknolojisiyle tütün tadını en saf haliyle sunar. Şık gece mavisi rengiyle hem teknolojiyi hem de tarzı bir araya getirir.`
+        },
+        {
+          id:"1",
+          name:"IQOS Duo 3.0 Gece Mavisi",
+          img:"images/iqos-3-blue-philip.jpg.webp",
+          short:"Şık gece mavisi, hızlı şarj ve çift kullanım imkanı.",
+          props: [
+            { icon:"⚡", value:"Çift Kullanım" },
+            { icon:"🔋", value:"Hızlı Şarj" },
+            { icon:"🎨", value:"Gece Mavisi" }
+          ],
+          desc: `IQOS Duo 3.0 Gece Mavisi, kompakt tasarımı ve modern rengiyle IQOS ailesinin en yeni nesil cihazıdır. Aynı anda iki stick kullanım özelliği ve hızlı şarj fonksiyonu ile öne çıkar. Kullanıcı dostu yapısı sayesinde temizlik ve bakım ihtiyacı minimuma indirilmiştir.<br><br>
+    Kusursuz ısıtma teknolojisiyle tütün tadını en saf haliyle sunar. Şık gece mavisi rengiyle hem teknolojiyi hem de tarzı bir araya getirir.`
+        },
+        {
+          id:"2",
+          name:"IQOS ILUMA Prime Gold",
+          img:"images/IQOS-3-bronz.jpg.webp",
+          short:"Altın rengi, bıçaksız yeni ısıtma teknolojisi.",
+          props: [
+            { icon:"✨", value:"Bıçaksız Isıtma" },
+            { icon:"🌟", value:"Premium Malzeme" },
+            { icon:"🟡", value:"Gold" }
+          ],
+          desc: `IQOS ILUMA Prime Gold, IQOS'un en gelişmiş bıçaksız ısıtma teknolojisine sahip cihazıdır. Altın renkli premium gövdesi ve ergonomik tasarımıyla tütün keyfini bir üst seviyeye taşır.<br><br>
+    Kendi segmentindeki en yeni modeldir. Temizlik gerektirmez ve uzun pil ömrüyle gün boyu kullanım imkanı tanır.`
+        },
+        {
+          id:"3",
+          name:"IQOS 3 DUO BLACK",
+          img:"ıqoscihazlar/ıqosDuoBlack.webp",
+          short:"Siyah renk, ardışık iki stick kullanımı.",
+          props: [
+            { icon:"⚡", value:"Çift Kullanım" },
+            { icon:"🔋", value:"Hızlı Şarj" },
+            { icon:"⬛", value:"Siyah" }
+          ],
+          desc: `IQOS 3 DUO Black, ardışık iki stick kullanabilme özelliği ve yenilenmiş hızlı şarj sistemi ile öne çıkar. Mat siyah rengiyle klasik ve zamansız bir görünüm sunar.<br><br>
+    Cihaz, önceki modellere göre iki kat daha hızlı şarj olur ve taşınabilirliğiyle her an yanınızda olmaya uygundur.`
+        },
+        {
+          id:"4",
+          name:"IQOS DUO GOLD",
+          img:"ıqoscihazlar/ıqosDuoGold.webp",
+          short:"Gold kasa, ardışık stick ve hızlı şarj.",
+          props: [
+            { icon:"⚡", value:"Çift Kullanım" },
+            { icon:"🟡", value:"Gold" },
+            { icon:"🔋", value:"Hızlı Şarj" }
+          ],
+          desc: `IQOS DUO Gold, altın renkli zarif gövdesiyle göz alıcı bir cihazdır. Ardışık iki stick kullanımı ile kullanıcıya esneklik sağlar. Şarj süresi kısaltılmış, kullanım kolaylığı artırılmıştır.<br><br>
+    Her zaman elit ve şık görünmek isteyenler için ideal bir seçimdir.`
+        },
+        {
+          id:"5",
+          name:"IQOS ILUMA",
+          img:"ıqoscihazlar/ıqosIluma.webp",
+          short:"Akıllı çekirdek indüksiyon sistemi, temizlik gerektirmez.",
+          props: [
+            { icon:"🆕", value:"Yeni Nesil" },
+            { icon:"🧲", value:"İndüksiyon" },
+            { icon:"🧹", value:"Temizleme Yok" }
+          ],
+          desc: `IQOS ILUMA, Smart Core Induction System™ ile tütün yapraklarını doğrudan içeriden ısıtır ve bıçaksız teknolojisi sayesinde temizlik gerektirmez.<br><br>
+    Kompakt ve ergonomik tasarımıyla taşınabilirlik sunar. Yalnızca Terea stickler ile uyumludur.`
+        },
+        {
+          id:"6",
+          name:"IQOS ILUMA Prime Black",
+          img:"ıqoscihazlar/ıqosIlumaPrimeBlack.webp",
+          short:"Siyah alüminyum gövde, premium segment.",
+          props: [
+            { icon:"🌑", value:"Prime Black" },
+            { icon:"🆕", value:"Bıçaksız" },
+            { icon:"🧲", value:"İndüksiyon" }
+          ],
+          desc: `IQOS ILUMA Prime Black, amiral gemisi modellerden olup, alüminyum gövdesiyle dayanıklı ve şıktır. Akıllı çekirdek indüksiyon sistemi ile tütünü yakmadan ısıtır.<br><br>
+    Uzun pil ömrü ve kolay kullanım özellikleriyle modern kullanıcılar için tasarlanmıştır.`
+        },
+        {
+          id:"7",
+          name:"IQOS ILUMA Prime Green",
+          img:"ıqoscihazlar/ıqosIlumaPrimeGreen.webp",
+          short:"Zarif yeşil renk, yüksek teknolojili gövde.",
+          props: [
+            { icon:"🟩", value:"Prime Green" },
+            { icon:"🧲", value:"İndüksiyon" },
+            { icon:"🆕", value:"Yeni Nesil" }
+          ],
+          desc: `IQOS ILUMA Prime Green, yeşil tonlu şık kasası ve gelişmiş ısıtma teknolojisiyle dikkat çeker. Bıçaksız, temizlik gerektirmeyen ve uzun ömürlü bir üründür.<br><br>
+    Yalnızca Terea sticklerle kullanılabilir.`
+        },
+        {
+          id:"8",
+          name:"IQOS ILUMA One Kit",
+          img:"ıqoscihazlar/ıqosIumaOneKit.webp",
+          short:"Hepsi bir arada, 20 stick kapasitesi.",
+          props: [
+            { icon:"🧳", value:"Kompakt" },
+            { icon:"🔋", value:"Uzun Pil" },
+            { icon:"🧲", value:"İndüksiyon" }
+          ],
+          desc: `IQOS ILUMA One Kit, pratik ve taşınabilir yapısıyla her yerde kolay kullanım sağlar. Şarj başına 20 stick kapasitesi vardır.<br><br>
+    Akıllı çekirdek indüksiyon sistemiyle temizlik gerektirmez ve günlük kullanım için idealdir.`
+        },
+        {
+          id:"9",
+          name:"IQOS 3 DUO BLUE",
+          img:"ıqoscihazlar/ıqos3DuoBlue.webp",
+          short:"Mavi gövde, hızlı şarj, çift stick.",
+          props: [
+            { icon:"🔵", value:"Mavi" },
+            { icon:"⚡", value:"Çift Kullanım" },
+            { icon:"🔋", value:"Hızlı Şarj" }
+          ],
+          desc: `IQOS 3 DUO Blue, yenilenen mavi kasası ile dikkat çeker. Hızlı şarj özelliği ve ardışık iki stick kullanımı ile gün boyu kullanım kolaylığı sunar.<br><br>
+    Şık tasarımıyla öne çıkar, taşınabilir ve dayanıklıdır.`
+        },
+        {
+          id:"10",
+          name:"IQOS 3 DUO White",
+          img:"ıqoscihazlar/ıqos3DuoWhite.webp",
+          short:"Modern beyaz kasa, hızlı şarj, çift stick.",
+          props: [
+            { icon:"⚪", value:"Beyaz" },
+            { icon:"⚡", value:"Çift Kullanım" },
+            { icon:"🔋", value:"Hızlı Şarj" }
+          ],
+          desc: `IQOS 3 DUO White, zarif beyaz rengiyle minimal ve modern bir görünüm sunar. Hızlı şarj ve ardışık stick kullanımı ile fonksiyonellik ön plandadır.<br><br>
+    Her ortamda şıklığıyla öne çıkmak isteyenler için idealdir.`
+        }
+      ],
+      terea: [
+        {
+          id:"12",
+          name:"Terea Starling Pearl",
+          img:"tereasigaralar/starlingpearl.jpg",
+          short:"Narenciye ve tropikal meyvelerin karışımından gelen ferahlatıcı bir etkisi vardır",
+          props: [
+            { icon:"❄️", value:"Mentol" },
+            { icon:"🟠", value:"Tropikal" },
+            { icon:"🌱", value:"Taze" }
+          ],
+          desc: `Terea Blue, yoğun mentol aroması ve serinletici etkisiyle öne çıkar. Tüm IQOS ILUMA cihazlarıyla uyumludur.<br><br>
+    Ağızda bıraktığı ferah tat ile tazeleyici bir deneyim sunar.`
+        },
+        {
+          id:"11",
+          name:"Terea Oasis Pearl",
+          img:"tereasigaralar/oasispearl.jpg",
+          short:"Narenciye ve tropikal meyvelerin karışımından gelen ferahlatıcı bir etkisi vardır",
+          props: [
+            { icon:"❄️", value:"Mentol" },
+            { icon:"🟠", value:"Tropikal" },
+            { icon:"🌱", value:"Taze" }
+          ],
+          desc: `Terea Blue, yoğun mentol aroması ve serinletici etkisiyle öne çıkar. Tüm IQOS ILUMA cihazlarıyla uyumludur.<br><br>
+    Ağızda bıraktığı ferah tat ile tazeleyici bir deneyim sunar.`
+        },
+        {
+          id:"0",
+          name:"Terea Sun Pearl",
+          img:"tereasigaralar/sunpearl.jpg",
+          short:"İnce bir tatlılık ve doğal tütün aromasının mükemmel bir birleşimidir.",
+          props: [
+            { icon:"❄️", value:"Mentol" },
+            { icon:"🌬️", value:"Ferah" },
+            { icon:"🌱", value:"Taze" }
+          ],
+          desc: `Terea Blue, yoğun mentol aroması ve serinletici etkisiyle öne çıkar. Tüm IQOS ILUMA cihazlarıyla uyumludur.<br><br>
+    Ağızda bıraktığı ferah tat ile tazeleyici bir deneyim sunar.`
+        },
+        {
+          id:"1",
+          name:"Terea Blue",
+          img:"images/tereablue.webp",
+          short:"Mentollü, serinletici ve ferahlatıcı tad.",
+          props: [
+            { icon:"🌳", value:"Odunsu" },
+            { icon:"🌬️", value:"Ferah" },
+            { icon:"🌱", value:"Taze" }
+          ],
+          desc: `Terea Blue, yoğun mentol aroması ve serinletici etkisiyle öne çıkar. Tüm IQOS ILUMA cihazlarıyla uyumludur.<br><br>
+    Ağızda bıraktığı ferah tat ile tazeleyici bir deneyim sunar.`
+        },
+        {
+          id:"2",
+          name:"TEREA MAUVE WAVE (0.5) BUNDLE (10 PAKET)",
+          img:"tereasigaralar/tereamauvewawr.webp",
+          short:"Orman meyvesi ve mentol aromalı tütün karışımı.",
+          props: [
+            { icon:"🍇", value:"Meyveli" },
+            { icon:"❄️", value:"Mentol" },
+            { icon:"🌱", value:"Taze" }
+          ],
+          desc: `TEREA Mauve Wave, koyu orman meyveleri ve çıtır mentol aromasıyla dikkat çeker. Her kutuda 10 paket (200 adet) tütün çubuğu bulunur. Tüm IQOS ILUMA cihazlarıyla uyumludur.`
+        },
+        {
+          id:"3",
+          name:"TEREA GREEN BUNDLE (10 PAKET)",
+          img:"tereasigaralar/tereagreenbundle.webp",
+          short:"Nane ve ferahlatıcı aromalı tütün çubukları.",
+          props: [
+            { icon:"🌿", value:"Nane" },
+            { icon:"❄️", value:"Mentol" },
+            { icon:"🌱", value:"Taze" }
+          ],
+          desc: `TEREA Green Bundle, yoğun nane aroması ve ferahlatıcı etkisiyle tütün keyfini zirveye taşır. 10 paket olarak sunulur.`
+        },
+        {
+          id:"4",
+          name:"TEREA AMBER BUNDLE (10 PAKET)",
+          img:"tereasigaralar/tereaamberbundle.webp",
+          short:"Hafif odunsu ve ceviz aromalı tütün.",
+          props: [
+            { icon:"🌰", value:"Ceviz" },
+            { icon:"🌳", value:"Odunsu" },
+            { icon:"🟠", value:"Amber" }
+          ],
+          desc: `TEREA Amber, hafif odunsu ve ceviz aroması notalarıyla yuvarlak, kavrulmuş tütün karışımı sunar. IQOS ILUMA cihazlarıyla tam uyumludur.`
+        },
+        {
+          id:"5",
+          name:"TEREA TURQUOISE BUNDLE (10 PAKET)",
+          img:"tereasigaralar/tereatuquoısebundle.webp",
+          short:"Kavrulmuş tütün, serinletici mentol, zengin aroma.",
+          props: [
+            { icon:"🥥", value:"Kavrulmuş" },
+            { icon:"❄️", value:"Mentol" },
+            { icon:"🔵", value:"Turkuaz" }
+          ],
+          desc: `TEREA Turquoise, hafif kavrulmuş tütün ve nane aromasıyla keyifli bir içim sunar. Her kutuda 10 paket bulunur.`
+        },
+        {
+          id:"6",
+          name:"TEREA YELLOW BUNDLE (10 PAKET)",
+          img:"tereasigaralar/tereayellow.webp",
+          short:"Yumuşak içimli, hafif aromalı tütün karışımı.",
+          props: [
+            { icon:"💛", value:"Yumuşak İçim" },
+            { icon:"🌾", value:"Hafif" },
+            { icon:"🌱", value:"Taze" }
+          ],
+          desc: `TEREA Yellow, lezzetli aroma ve yumuşak içim isteyenler için ideal tütün karışımıdır. Her kutuda 10 paket bulunur.`
+        },
+        {
+          id:"7",
+          name:"TEREA TEAK BUNDLE (10 PAKET)",
+          img:"tereasigaralar/tereateak.webp",
+          short:"Fındık ve kavrulmuş tütün aromalı karışım.",
+          props: [
+            { icon:"🌰", value:"Fındık" },
+            { icon:"🔥", value:"Kavrulmuş" },
+            { icon:"🌾", value:"Zengin" }
+          ],
+          desc: `TEREA Teak Bundle, fındık aroması ve kavrulmuş tütün karışımıyla yoğun bir deneyim sunar.`
+        },
+        {
+          id:"8",
+          name:"TEREA BLUE BUNDLE (10 PAKET)",
+          img:"tereasigaralar/tereablue.webp",
+          short:"Derin mentol ve nane aromalı yumuşak tütün.",
+          props: [
+            { icon:"❄️", value:"Mentol" },
+            { icon:"🌿", value:"Nane" },
+            { icon:"🔵", value:"Blue" }
+          ],
+          desc: `TEREA Blue Bundle, derin mentol ve nane aromasıyla ferahlatıcı bir içim sunar. Her kutuda 10 paket (200 adet) vardır.`
+        },
+        {
+          id:"9",
+          name:"TEREA SIENNA BUNDLE (10 PAKET)",
+          img:"tereasigaralar/tereasıenna.webp",
+          short:"Odunsu ve hafif çay aromalı tütün.",
+          props: [
+            { icon:"🍂", value:"Odunsu" },
+            { icon:"🍵", value:"Çay" },
+            { icon:"🟤", value:"Sienna" }
+          ],
+          desc: `TEREA Sienna Bundle, odunsu ve hafif çay aromasıyla farklı bir tütün karışımı sunar. 10 paket olarak satılır.`
+        },
+        {
+          id:"10",
+          name:"TEREA RUSSET BUNDLE (10 PAKET)",
+          img:"tereasigaralar/terearusset.webp",
+          short:"Malt aromalı, yoğun kavrulmuş tütün karışımı.",
+          props: [
+            { icon:"🌾", value:"Malt" },
+            { icon:"🔥", value:"Kavrulmuş" },
+            { icon:"🟤", value:"Russet" }
+          ],
+          desc: `TEREA Russet Bundle, malt aromaları ve zengin kavrulmuş tütün tadıyla güçlü bir içim sunar.`
+        }
+      ],
+      heets: [
+        {
+          id:"1",
+          name:"Heets Teak (Rusya-Ukrayna)",
+          img:"heetssigaralar/ıqosheetsteak.webp",
+          short:"Doğal tütün, güçlü aroma ve yoğun içim.",
+          props: [
+            { icon:"🌱", value:"Doğal Tütün" },
+            { icon:"💪", value:"Güçlü Aroma" },
+            { icon:"🟫", value:"Teak" }
+          ],
+          desc: `HEETS Teak, Rusya ve Ukrayna menşeili, doğal tütün dolgulu çubuklardır. Elektronik ısıtma için tasarlanmıştır ve güçlü bir aroma sunar.`
+        },
+        {
+          id:"2",
+          name:"Heets Summer Breeze",
+          img:"heetssigaralar/heetssummerbreeze.webp",
+          short:"Meyve notalı hafif içimli tütün.",
+          props: [
+            { icon:"🍉", value:"Meyve" },
+            { icon:"🌞", value:"Yaz Esintisi" },
+            { icon:"🌱", value:"Hafif" }
+          ],
+          desc: `Heets Summer Breeze, canlı meyve aromaları ve yaz esintisi tadıyla ferahlatıcı bir deneyim sunar.`
+        },
+        {
+          id:"3",
+          name:"Heets Creations Yugen",
+          img:"heetssigaralar/heetscreationsyugen.webp",
+          short:"Çiçeksi, meyveli ve hafif mentollü aroma.",
+          props: [
+            { icon:"🌸", value:"Çiçeksi" },
+            { icon:"🍇", value:"Meyveli" },
+            { icon:"❄️", value:"Mentol" }
+          ],
+          desc: `Heets Creations Yugen, lavanta, yasemin ve armut notalarıyla zenginleşmiş çiçeksi ve meyveli bir tütün deneyimi sunar. Hafif mentol ile tamamlanır.`
+        },
+        {
+          id:"4",
+          name:"Heets Creations Noor",
+          img:"heetssigaralar/ıqosheetsnoor.webp",
+          short:"Ceviz, narenciye ve yumuşak içim.",
+          props: [
+            { icon:"🥜", value:"Ceviz" },
+            { icon:"🍊", value:"Narenciye" },
+            { icon:"🌱", value:"Yumuşak" }
+          ],
+          desc: `Heets Noor, ceviz ve narenciye aromalarını birleştirir. İlk başta ceviz, nefes verirken narenciye ve meyve notaları hissedilir.`
+        },
+        {
+          id:"5",
+          name:"Heets Creations Glaze",
+          img:"heetssigaralar/glazea.webp",
+          short:"Kremalı vanilya, nane ve hafif baharat.",
+          props: [
+            { icon:"🍦", value:"Vanilya" },
+            { icon:"🌿", value:"Nane" },
+            { icon:"🌶️", value:"Baharat" }
+          ],
+          desc: `Heets Glaze, kremalı vanilya tadı ve hafif baharatlarla zenginleştirilmiştir. Ferahlatıcı nane aromasıyla tamamlanır.`
+        },
+        {
+          id:"6",
+          name:"Heets Creations Apricity",
+          img:"heetssigaralar/apricity.webp",
+          short:"Meyvemsi-odunsu, yumuşak ve kremsi tat.",
+          props: [
+            { icon:"🍑", value:"Meyvemsi" },
+            { icon:"🌳", value:"Odunsu" },
+            { icon:"🥛", value:"Kremsi" }
+          ],
+          desc: `Heets Apricity, tatlı ve sıcak meyvemsi-odunsu alt tonlara sahip yoğun bir tütün bazına sahiptir. Kadifemsi kremsi bir bitiş sunar.`
+        },
+        {
+          id:"7",
+          name:"Heets Yellow Selection (Rusya-Ukrayna)",
+          img:"heetssigaralar/yellow.webp",
+          short:"Hafif ve tatlı tütün aromalı klasik stick.",
+          props: [
+            { icon:"💛", value:"Hafif İçim" },
+            { icon:"🌾", value:"Tatlı Tütün" },
+            { icon:"🌱", value:"Klasik" }
+          ],
+          desc: `Heets Yellow Selection, Marlboro Gold-Light benzeri hafif ve yumuşak içim sevenler için idealdir.`
+        },
+        {
+          id:"8",
+          name:"Heets Yellow Selection (Kazakistan-Gürcistan-Özbekistan)",
+          img:"heetssigaralar/yellowselection.webp",
+          short:"Altın sarısı, yumuşak ve hafif içim.",
+          props: [
+            { icon:"💛", value:"Yumuşak" },
+            { icon:"🌱", value:"Hafif" },
+            { icon:"🟡", value:"Yellow" }
+          ],
+          desc: `Heets Yellow Selection, sarı paketiyle yumuşak ve hafif içim isteyenler için uygundur.`
+        },
+        {
+          id:"9",
+          name:"Heets Turquaz Selection (Rusya-Ukrayna)",
+          img:"heetssigaralar/turquazselection.webp",
+          short:"Mentollü, ferahlatıcı ve taze aroma.",
+          props: [
+            { icon:"❄️", value:"Mentol" },
+            { icon:"💧", value:"Ferah" },
+            { icon:"🔵", value:"Turquaz" }
+          ],
+          desc: `Heets Turquaz Selection, mentollü ve ferahlatıcı aromasıyla Marlboro Touch hissiyatı sunar.`
+        },
+        {
+          id:"10",
+          name:"Heets Turquaz Selection (Kazakistan-Gürcistan-Özbekistan)",
+          img:"images/heetsamber.webp",
+          short:"Mentollü ve taze içimli stick.",
+          props: [
+            { icon:"❄️", value:"Mentol" },
+            { icon:"🔵", value:"Turquaz" },
+            { icon:"🌱", value:"Taze" }
+          ],
+          desc: `Heets Turquaz Selection, mentollü ve taze aromasıyla klasik Marlboro Touch içimini arayanlar için uygundur.`
+        },
+        {
+          id:"11",
+          name:"Heets Tropical Swift Selection (Kazakistan-Gürcistan-Özbekistan)",
+          img:"heetssigaralar/tropicalswift.webp",
+          short:"Tropikal meyve aromalı stick.",
+          props: [
+            { icon:"🍍", value:"Tropikal" },
+            { icon:"🍉", value:"Meyveli" },
+            { icon:"💛", value:"Hafif" }
+          ],
+          desc: `Heets Tropical Swift, tropikal meyve ve mentol karışımıyla farklı bir lezzet sunar.`
+        },
+        {
+          id:"12",
+          name:"Heets Silver Selection (Kazakistan-Gürcistan-Özbekistan)",
+          img:"heetssigaralar/silver.webp",
+          short:"Pürüzsüz, kokusuz ve doyurucu tütün stick.",
+          props: [
+            { icon:"⚪", value:"Pürüzsüz" },
+            { icon:"🌱", value:"Kokusuz" },
+            { icon:"🌾", value:"Tatmin Edici" }
+          ],
+          desc: `Heets Silver Selection, pürüzsüz ve kokusuz tütün aromalı bir deneyim sunar. Yoğun duman ve tatmin edici içim sağlar.`
+        },
+        {
+          id:"13",
+          name:"Heets Purple Selection (Rusya-Ukrayna)",
+          img:"heetssigaralar/purple.webp",
+          short:"Böğürtlen mentol aromalı, yumuşak içim.",
+          props: [
+            { icon:"🫐", value:"Böğürtlen" },
+            { icon:"❄️", value:"Mentol" },
+            { icon:"🔮", value:"Purple" }
+          ],
+          desc: `Heets Purple Selection, böğürtlen mentol aroması ve yumuşak içimiyle klasik stick arayanlara hitap eder.`
+        },
+        {
+          id:"14",
+          name:"Heets Purple Selection (Kazakistan-Gürcistan-Özbekistan)",
+          img:"heetssigaralar/purplewawe.webp",
+          short:"Böğürtlen mentollü, hafif stick.",
+          props: [
+            { icon:"🫐", value:"Böğürtlen" },
+            { icon:"❄️", value:"Mentol" },
+            { icon:"🔮", value:"Purple" }
+          ],
+          desc: `Heets Purple Selection, yumuşak ve pürüzsüz içim isteyenler için böğürtlen mentol karışımı sunar.`
+        },
+        {
+          id:"15",
+          name:"Heets Green Zing Selection (Kazakistan-Gürcistan-Özbekistan)",
+          img:"images/heetsamber.webp",
+          short:"Nane ve mentol aromalı, ferah stick.",
+          props: [
+            { icon:"🌿", value:"Nane" },
+            { icon:"❄️", value:"Mentol" },
+            { icon:"💚", value:"Green Zing" }
+          ],
+          desc: `Heets Green Zing, serin nane ve mentol aromasıyla ferah bir tütün deneyimi sunar.`
+        },
+        {
+          id:"16",
+          name:"Heets Gold Selection (Rusya-Ukrayna)",
+          img:"heetssigaralar/gold.webp",
+          short:"Tatlı ve hafif tütün aromalı klasik stick.",
+          props: [
+            { icon:"🥇", value:"Gold" },
+            { icon:"🌾", value:"Tatlı" },
+            { icon:"💛", value:"Hafif" }
+          ],
+          desc: `Heets Gold Selection, hafif ve tatlı tütün aromasıyla klasik içim sevenler için idealdir.`
+        },
+        {
+          id:"17",
+          name:"Heets Bronze Selection (Rusya-Ukrayna)",
+          img:"heetssigaralar/bronze.webp",
+          short:"Baharatlı ve kadifemsi tütün.",
+          props: [
+            { icon:"🟫", value:"Bronze" },
+            { icon:"🌶️", value:"Baharat" },
+            { icon:"🌱", value:"Klasik" }
+          ],
+          desc: `Heets Bronze Selection, hafif baharat aroması ve kadifemsi dokusuyla öne çıkar.`
+        },
+        {
+          id:"18",
+          name:"Heets Bronze Selection (Kazakistan-Gürcistan-Özbekistan)",
+          img:"heetssigaralar/bronzeselection.webp",
+          short:"Baharatlı ve kadifemsi stick.",
+          props: [
+            { icon:"🟫", value:"Bronze" },
+            { icon:"🌶️", value:"Baharat" },
+            { icon:"💛", value:"Hafif" }
+          ],
+          desc: `Heets Bronze Selection, kadifemsi dokusu ve baharat aromasıyla yoğun bir içim sunar.`
+        },
+        {
+          id:"19",
+          name:"Heets Amber",
+          img:"images/heetsamber.webp",
+          short:"Dengeli ve güçlü tütün aroması.",
+          props: [
+            { icon:"🟠", value:"Amber" },
+            { icon:"🌱", value:"Klasik" },
+            { icon:"💪", value:"Dengeli" }
+          ],
+          desc: `Heets Amber, klasik sigara içimi arayanlara uygun, dengeli bir tütün aroması sunar.`
+        },
+        {
+          id:"20",
+          name:"Heets Amber Selection (Kazakistan-Gürcistan-Özbekistan)",
+          img:"images/heetsamber.webp",
+          short:"Turuncu paket, yoğun ve doyurucu aroma.",
+          props: [
+            { icon:"🟠", value:"Amber" },
+            { icon:"🌱", value:"Klasik" },
+            { icon:"💪", value:"Doyurucu" }
+          ],
+          desc: `Heets Amber Selection, turuncu paketiyle güçlü ve doyurucu bir tütün deneyimi sunar.`
+        },
+        {
+          id:"21",
+          name:"Heets Amber Selection (Rusya-Ukrayna)",
+          img:"images/heetsamber.webp",
+          short:"Kırmızı Marlboro benzeri yoğun içim.",
+          props: [
+            { icon:"🟥", value:"Kırmızı Marlboro" },
+            { icon:"🟠", value:"Amber" },
+            { icon:"💪", value:"Yoğun" }
+          ],
+          desc: `Heets Amber Selection, kırmızı Marlboro benzeri yoğunluk ve aromaya sahip bir sticktir.`
+        }
+      ]
+    };
+    
+    // --- SPA State ---
+    let state = { page:"categories", category:null, product:null };
+    const $app = document.getElementById('app');
+    
+    // SPA rendering functions (render, renderCategories, renderProducts, renderProductDetail)
+    function render() {
+      updateMenu();
+      if(state.page==="categories") renderCategories();
+      else if(state.page==="products") renderProducts();
+      else if(state.page==="product") renderProductDetail();
+    }
+    function renderCategories() {
+      $app.innerHTML = `
+        <h1>Ürün Kategorileri</h1>
+        <div class="categories">
+          ${CATEGORIES.map(cat=>`
+            <div class="category-card" data-id="${cat.id}">
+              <span class="cat-icon">${cat.icon}</span>
+              ${cat.name}<br>
+              <small style="color:#888;font-weight:400;font-size:0.98rem;">${cat.desc}</small>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      document.querySelectorAll('.category-card').forEach(card=>{
+        card.onclick = ()=>{ state.page="products"; state.category=card.dataset.id; render(); }
+      });
+    }
+    function renderProducts() {
+      const cat = CATEGORIES.find(c=>c.id===state.category);
+      const list = PRODUCTS[state.category]||[];
+      $app.innerHTML = `
+        <button class="back-btn" onclick="historyBack()">← Kategorilere Dön</button>
+        <h1>${cat.icon} ${cat.name}</h1>
+        <div class="products-list">
+          ${list.map(pr=>`
+            <div class="product-card" data-id="${pr.id}">
+              <img src="${pr.img}" alt="${pr.name}">
+              <div class="product-title">${pr.name}</div>
+              <div class="product-short">${pr.short}</div>
+              <button class="product-view-btn" data-id="${pr.id}">Ürünü İncele</button>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      document.querySelectorAll('.product-view-btn').forEach(btn=>{
+        btn.onclick = e => {
+          state.page="product";
+          state.product=btn.dataset.id;
+          render();
+          e.stopPropagation();
+        }
+      });
+    }
+    function renderProductDetail() {
+      const cat = CATEGORIES.find(c=>c.id===state.category);
+      const pr = (PRODUCTS[state.category]||[]).find(p=>p.id===state.product);
+      if(!pr) { historyBack(); return; }
+      $app.innerHTML = `
+        <button class="back-btn" onclick="historyBack()">← Ürünlere Dön</button>
+        <div class="detail-page">
+          <div class="detail-img"><img src="${pr.img}" alt="${pr.name}"></div>
+          <div class="detail-info">
+            <div class="detail-title">${pr.name}</div>
+            <div class="detail-props">
+              ${(pr.props||[]).map(p=>`<div class="detail-prop">${p.icon} <b>${p.value}</b></div>`).join('')}
+            </div>
+            <div class="detail-actions">
+              <a href="tel:+905384075786">Fiyat bilgisi ve sipariş</a>
+              <a href="https://wa.me/+905384075786" target="_blank">WhatsApp İletişim</a>
+            </div>
+            <div class="detail-desc-title">Ürün Açıklaması</div>
+            <div class="detail-desc">${pr.desc}</div>
+          </div>
+        </div>
+      `;
+    }
+    function updateMenu() {
+      document.querySelectorAll('.main-nav a').forEach(a=>a.classList.remove('active'));
+      document.getElementById('menuProducts').classList.add('active');
+    }
+    
+    // --- Events (Bu kısım DOMContentLoaded içine alınmalı) ---
+    document.addEventListener('DOMContentLoaded', function() {
+      // İlk render'ı burada çağırın
+      render();
+    
+      document.getElementById('menuProducts').onclick = e => {
+        e.preventDefault();
+        state.page="categories"; state.category=null; state.product=null; render();
+      };
+      
+      // LOGO BUTONU BURADAN KALDIRILDI! ARTIK MAIN.JS TARAFINDAN YÖNETİLİYOR.
+      // document.getElementById('logoBtn').onclick = function() {
+      //   window.location = "index.html";
+      // };
+    
+      window.historyBack = function(){
+        if(state.page==="products") { state.page="categories"; render(); }
+        else if(state.page==="product") { state.page="products"; render(); }
+      };
+    
+      // LIGHTBOX KODLARI BURADAN KALDIRILDI! ARTIK MAIN.JS TARAFINDAN YÖNETİLİYOR.
+      // const imgLightbox = document.getElementById('imgLightbox');
+      // const imgLightboxImg = document.getElementById('imgLightboxImg');
+      // const imgLightboxClose = document.getElementById('imgLightboxClose');
+      // if (imgLightbox && imgLightboxImg && imgLightboxClose) {
+      //   document.addEventListener('click', function(e) { /* ... */ });
+      //   imgLightbox.addEventListener('click', function(e) { /* ... */ });
+      //   imgLightboxClose.addEventListener('click', function(e) { /* ... */ });
+      //   imgLightboxImg.addEventListener('click', function(e) { /* ... */ });
+      // }
+    
+    }); // DOMContentLoaded kapanışı
+    </script>
+<div class="img-lightbox-bg" id="imgLightbox">
+  <button class="img-lightbox-close" id="imgLightboxClose" aria-label="Kapat">&times;</button>
+  <img src="" alt="Büyük Görsel" class="img-lightbox-img" id="imgLightboxImg" />
+</div>
+<a href="https://wa.me/905384075786?text=Merhaba,%20sitenizden%20geliyorum%20ve%20bir%20sorum%20var." 
+class="whatsapp-float" 
+target="_blank" 
+aria-label="WhatsApp üzerinden iletişime geçin" 
+rel="noopener noreferrer">
+ <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" loading="lazy" />
+</a>
+</body>
+</html>
