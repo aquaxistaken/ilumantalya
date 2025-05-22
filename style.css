@@ -1374,7 +1374,7 @@ background: rgba(0, 0, 0, 0.05); /* Üzerine gelince hafif kararma */
 
 
 .blog-post-img{
-
+  height: 100%;width: 40%;
   border-radius: 10px;
   box-shadow: var(--shadow);
 }
@@ -1382,7 +1382,6 @@ background: rgba(0, 0, 0, 0.05); /* Üzerine gelince hafif kararma */
 .blog-post-img:hover{
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   cursor: pointer;
-  scale: 1.4;
   transition: 100ms;
 }
 
@@ -1890,3 +1889,4 @@ transition: 100ms;
       right: 15px;
   }
 }
+
